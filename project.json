@@ -4,7 +4,7 @@
   "slug": "testpush",
   "description": null,
   "abl_version": "1.0",
-  "exported_at": "2026-06-26T11:40:46.219Z",
+  "exported_at": "2026-06-26T11:42:42.275Z",
   "exported_by": "user-dev-001",
   "entry_agent": null,
   "dsl_format": "legacy",
@@ -27,16 +27,23 @@
       "ownerTeam": null,
       "description": "Helpful assistant that answers user question.",
       "version": null
+    },
+    "HelpDeskAgent": {
+      "path": "agents/helpdeskagent.agent.abl",
+      "owner": null,
+      "ownerTeam": null,
+      "description": null,
+      "version": null
     }
   },
   "tools": {},
   "behavior_profiles": {},
   "metadata": {
     "entity_counts": {
-      "agents": 1,
+      "agents": 2,
       "tools": 0,
       "behavior_profiles": 0,
-      "core": 2,
+      "core": 3,
       "connections": 0,
       "prompts": 0,
       "guardrails": 0,

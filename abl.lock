@@ -1,10 +1,15 @@
 {
   "lockfile_version": "2.0",
-  "generated_at": "2026-06-26T11:40:46.219Z",
+  "generated_at": "2026-06-26T11:42:42.276Z",
   "agents": {
     "WikiAgent": {
       "version": "1.0",
       "source_hash": "f528f73bfa339e99",
+      "status": "active"
+    },
+    "HelpDeskAgent": {
+      "version": "1.0",
+      "source_hash": "51bef05e5bb4dbcd",
       "status": "active"
     }
   },
@@ -29,7 +34,7 @@
   "vocabulary": {},
   "behavior_profiles": {},
   "layer_hashes": {
-    "core": "0515b25c7461bb80142d729e874e99f2241ab01b26d7b7a305bdf555e596aad2",
+    "core": "cafaa670062fd0d3c3f258946250fba1a3480e136df2880801f8a54c3ecbb455",
     "connections": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "prompts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "guardrails": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -40,5 +45,5 @@
     "vocabulary": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "tables": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
-  "integrity": "3b61a819abb6ebefa462bdab593718c82430345c0baa6041e3953396774bae35"
+  "integrity": "3661f071a7a2ac9293a17a505f1b16faf3de3ddef559f368b654e82b055327f1"
 }
