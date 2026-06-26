@@ -1,0 +1,53 @@
+{
+  "format_version": "2.0",
+  "name": "TestPush",
+  "slug": "testpush",
+  "description": null,
+  "abl_version": "1.0",
+  "exported_at": "2026-06-26T10:02:58.417Z",
+  "exported_by": "user-dev-001",
+  "entry_agent": null,
+  "dsl_format": "legacy",
+  "layers_included": [
+    "core",
+    "connections",
+    "prompts",
+    "guardrails",
+    "workflows",
+    "evals",
+    "search",
+    "channels",
+    "vocabulary"
+  ],
+  "agents": {
+    "WikiAgent": {
+      "path": "agents/wikiagent.agent.abl",
+      "owner": null,
+      "ownerTeam": null,
+      "description": "Helpful assistant that answers user question.",
+      "version": null
+    }
+  },
+  "tools": {},
+  "behavior_profiles": {},
+  "metadata": {
+    "entity_counts": {
+      "agents": 1,
+      "tools": 0,
+      "behavior_profiles": 0,
+      "core": 2,
+      "connections": 0,
+      "prompts": 0,
+      "guardrails": 0,
+      "workflows": 0,
+      "evals": 0,
+      "search": 0,
+      "channels": 0,
+      "vocabulary": 0
+    },
+    "required_env_vars": [],
+    "required_config_vars": [],
+    "required_connectors": [],
+    "required_mcp_servers": []
+  }
+}

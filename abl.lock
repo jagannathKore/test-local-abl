@@ -1,0 +1,40 @@
+{
+  "lockfile_version": "2.0",
+  "generated_at": "2026-06-26T10:02:58.418Z",
+  "agents": {
+    "WikiAgent": {
+      "version": "1.0",
+      "source_hash": "f528f73bfa339e99",
+      "status": "active"
+    }
+  },
+  "tools": {},
+  "configs": {
+    "config/runtime-config.json": {
+      "source_hash": "b08adb569f0c10cc"
+    },
+    "config/project-model-configs/gpt-5_4__2026-03-05_.model-config.json": {
+      "source_hash": "e99d995740715528"
+    }
+  },
+  "connections": {},
+  "guardrails": {},
+  "workflows": {},
+  "evals": {},
+  "search": {},
+  "channels": {},
+  "vocabulary": {},
+  "behavior_profiles": {},
+  "layer_hashes": {
+    "core": "e42f58e7fd8030211260366f2b0178568230ed0b0d9062d0c877686328461ed0",
+    "connections": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prompts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "guardrails": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "workflows": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evals": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "channels": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "vocabulary": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "integrity": "d658b3242a67c078e7fb14baa169ee3c056100ebdb7b43e0a3af21dd799995bb"
+}
