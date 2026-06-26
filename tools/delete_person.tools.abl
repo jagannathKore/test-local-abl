@@ -1,0 +1,6 @@
+TOOLS:
+  delete_person() -> object
+    description: "Tool responsible to delete a person"
+    type: http
+    endpoint: "https://jsonplaceholder.typicode.com/users/1"
+    method: DELETE

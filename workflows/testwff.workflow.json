@@ -1,0 +1,13 @@
+{
+  "name": "testwff",
+  "type": "cx_automation",
+  "description": null,
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "slug": "testwff",
+  "tags": [],
+  "_exportedId": "019f03e4-6442-7411-bb0d-b586d933903e"
+}

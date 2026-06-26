@@ -1,6 +1,6 @@
 {
   "lockfile_version": "2.0",
-  "generated_at": "2026-06-26T11:42:42.276Z",
+  "generated_at": "2026-06-26T12:43:11.126Z",
   "agents": {
     "WikiAgent": {
       "version": "1.0",
@@ -13,7 +13,11 @@
       "status": "active"
     }
   },
-  "tools": {},
+  "tools": {
+    "tools/delete_person.tools.abl": {
+      "source_hash": "2b1d7aafd68e4b55"
+    }
+  },
   "configs": {
     "config/runtime-config.json": {
       "source_hash": "94ace7d9fdc41674"
@@ -27,23 +31,31 @@
   },
   "connections": {},
   "guardrails": {},
-  "workflows": {},
+  "workflows": {
+    "workflows/testwff.workflow.json": {
+      "source_hash": "67263850128eb7ba"
+    },
+    "workflows/versions/testwff/draft.version.json": {
+      "source_hash": "e6fbe62b839b673e",
+      "version": "draft"
+    }
+  },
   "evals": {},
   "search": {},
   "channels": {},
   "vocabulary": {},
   "behavior_profiles": {},
   "layer_hashes": {
-    "core": "cafaa670062fd0d3c3f258946250fba1a3480e136df2880801f8a54c3ecbb455",
+    "core": "a602ad41f7c24adff45f5d01fb787980a819741a08d599559ef7ac1bb1bf781c",
     "connections": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "prompts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "guardrails": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "workflows": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "workflows": "a1abaa3a78c13cb9ee5183331f68089aba3b65e110fdd69f3d09bd06f0c33c1e",
     "evals": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "search": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "channels": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "vocabulary": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "tables": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
-  "integrity": "3661f071a7a2ac9293a17a505f1b16faf3de3ddef559f368b654e82b055327f1"
+  "integrity": "6d56951fb2e5c1e2bc8827eb05efda6d5f6e3726b66e59190a015d2b95af388e"
 }

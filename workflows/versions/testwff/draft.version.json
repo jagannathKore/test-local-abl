@@ -1,0 +1,58 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "6e743d854b9235305393fdc8c43509c83aad6e496c2dcdf0a08d0f660fad39a9",
+  "changelog": null,
+  "triggers": [
+    {
+      "_exportedId": "019f03e4-646a-73ea-a144-a2f12605e45e",
+      "triggerName": "webhook",
+      "type": "webhook",
+      "config": {},
+      "environment": null
+    }
+  ],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": []
+        }
+      },
+      {
+        "id": "f8529e45-12fa-493c-9ecd-167f06b1f82c",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 650,
+          "y": 50
+        },
+        "config": {}
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-node-f8529e45-12fa-493c-9ecd-167f06b1f82c",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "f8529e45-12fa-493c-9ecd-167f06b1f82c"
+      }
+    ],
+    "steps": [],
+    "inputSchema": null,
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

@@ -4,7 +4,7 @@
   "slug": "testpush",
   "description": null,
   "abl_version": "1.0",
-  "exported_at": "2026-06-26T11:42:42.275Z",
+  "exported_at": "2026-06-26T12:43:11.122Z",
   "exported_by": "user-dev-001",
   "entry_agent": null,
   "dsl_format": "legacy",
@@ -36,18 +36,23 @@
       "version": null
     }
   },
-  "tools": {},
+  "tools": {
+    "delete_person": {
+      "path": "tools/delete_person.tools.abl",
+      "owner": null
+    }
+  },
   "behavior_profiles": {},
   "metadata": {
     "entity_counts": {
       "agents": 2,
-      "tools": 0,
+      "tools": 1,
       "behavior_profiles": 0,
-      "core": 3,
+      "core": 4,
       "connections": 0,
       "prompts": 0,
       "guardrails": 0,
-      "workflows": 0,
+      "workflows": 1,
       "evals": 0,
       "search": 0,
       "channels": 0,
