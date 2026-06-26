@@ -1,9 +1,4 @@
 {
-  "operationTierOverrides": {},
-  "orchestrationContract": {
-    "mode": "v2",
-    "origin": "new_empty"
-  },
   "extraction": {
     "strategy": "auto",
     "correction_detection": "ml",
@@ -52,10 +47,6 @@
     "max_boundary_calls_per_turn": 8,
     "boundary_call_enabled": true
   },
-  "analytics": {
-    "dimensions": [],
-    "outputItems": []
-  },
   "filler": {
     "enabled": true,
     "chatEnabled": true,
@@ -71,5 +62,13 @@
     "piggybackEnabled": true,
     "pipelineGenerationEnabled": true,
     "modelSource": "system"
+  },
+  "analytics": {
+    "dimensions": [],
+    "outputItems": []
+  },
+  "orchestrationContract": {
+    "mode": "v2",
+    "origin": "new_empty"
   }
 }

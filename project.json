@@ -4,7 +4,7 @@
   "slug": "testpush",
   "description": null,
   "abl_version": "1.0",
-  "exported_at": "2026-06-26T10:02:58.417Z",
+  "exported_at": "2026-06-26T11:39:06.897Z",
   "exported_by": "user-dev-001",
   "entry_agent": null,
   "dsl_format": "legacy",
@@ -17,7 +17,8 @@
     "evals",
     "search",
     "channels",
-    "vocabulary"
+    "vocabulary",
+    "tables"
   ],
   "agents": {
     "WikiAgent": {
@@ -43,7 +44,8 @@
       "evals": 0,
       "search": 0,
       "channels": 0,
-      "vocabulary": 0
+      "vocabulary": 0,
+      "tables": 0
     },
     "required_env_vars": [],
     "required_config_vars": [],
