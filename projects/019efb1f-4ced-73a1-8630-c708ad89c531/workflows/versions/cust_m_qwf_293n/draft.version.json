@@ -1,0 +1,77 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "b1ffaa8823c60507995d6f129f69e024726ac20f9aa0c94ae80803baca757914",
+  "changelog": null,
+  "triggers": [],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 100,
+          "y": 200
+        },
+        "config": {
+          "inputVariables": [
+            {
+              "name": "tier",
+              "type": "string",
+              "required": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "tool-1",
+        "nodeType": "tool",
+        "name": "TableParamRunner",
+        "position": {
+          "x": 400,
+          "y": 200
+        },
+        "config": {
+          "toolId": "019efb23-be19-7fbb-b2c9-33388767b4a8",
+          "toolName": "cust_m_saved_x5cq",
+          "params": {
+            "tier": "{{trigger.payload.tier}}"
+          }
+        }
+      },
+      {
+        "id": "end",
+        "nodeType": "end",
+        "name": "End",
+        "position": {
+          "x": 700,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "start",
+        "sourceHandle": "on_success",
+        "target": "tool-1"
+      },
+      {
+        "id": "e2",
+        "source": "tool-1",
+        "sourceHandle": "on_success",
+        "target": "end"
+      }
+    ],
+    "steps": [],
+    "inputSchema": null,
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

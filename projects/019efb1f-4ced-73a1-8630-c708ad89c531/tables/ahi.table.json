@@ -1,0 +1,21 @@
+{
+  "name": "ahi",
+  "displayName": "ahi",
+  "scope": "project",
+  "kind": "table",
+  "schemaVersion": 1,
+  "columns": [
+    {
+      "name": "id",
+      "type": "string",
+      "required": true,
+      "default": {
+        "expr": "uuid()"
+      },
+      "indexed": true,
+      "unique": true,
+      "sensitive": false,
+      "order": 0
+    }
+  ]
+}

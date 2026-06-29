@@ -1,0 +1,13 @@
+{
+  "name": "cust_m_qwf_293n",
+  "type": "cx_automation",
+  "description": "Agent Tables E2E - runs parameterized table tool inputs",
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "slug": "cust-m-qwf-293n",
+  "tags": [],
+  "_exportedId": "019efb23-bef0-7fc2-9481-2c1b4a8b8e16"
+}

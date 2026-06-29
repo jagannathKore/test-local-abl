@@ -1,0 +1,13 @@
+{
+  "agentTransfer": null,
+  "compactionThreshold": null,
+  "enableThinking": false,
+  "memory": null,
+  "promptOverrides": {},
+  "publicApiAccess": null,
+  "sdkDefaults": null,
+  "sessionLifecycle": null,
+  "thinkingBudget": null,
+  "thoughtDescription": null,
+  "traceDimensions": []
+}

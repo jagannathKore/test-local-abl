@@ -1,0 +1,47 @@
+{
+  "format_version": "2.0",
+  "name": "AgentTablesE2E",
+  "slug": "agenttablese2e",
+  "description": "Agent Tables E2E project created by Playwright setup.",
+  "abl_version": "1.0",
+  "exported_at": "2026-06-29T14:22:59.940Z",
+  "exported_by": "019e3eef-75b4-7bf4-a96b-b43e426343da",
+  "entry_agent": null,
+  "dsl_format": "legacy",
+  "layers_included": [
+    "core",
+    "connections",
+    "prompts",
+    "guardrails",
+    "workflows",
+    "evals",
+    "search",
+    "channels",
+    "vocabulary",
+    "tables"
+  ],
+  "agents": {},
+  "tools": {},
+  "behavior_profiles": {},
+  "metadata": {
+    "entity_counts": {
+      "agents": 0,
+      "tools": 0,
+      "behavior_profiles": 0,
+      "core": 0,
+      "connections": 0,
+      "prompts": 0,
+      "guardrails": 0,
+      "workflows": 5,
+      "evals": 0,
+      "search": 0,
+      "channels": 0,
+      "vocabulary": 0,
+      "tables": 1
+    },
+    "required_env_vars": [],
+    "required_config_vars": [],
+    "required_connectors": [],
+    "required_mcp_servers": []
+  }
+}

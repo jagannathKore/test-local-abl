@@ -1,0 +1,13 @@
+{
+  "name": "cust_m_wf_293n",
+  "type": "cx_automation",
+  "description": "Agent Tables E2E - runs validated SQL text via the bound table tool",
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "slug": "cust-m-wf-293n",
+  "tags": [],
+  "_exportedId": "019efb23-beb7-7016-ae48-ad73d9c6b020"
+}

@@ -1,0 +1,77 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "e7cdb3192fab348e2adace360e954a0f66d4d140b8e9899e92422f0c87ec73da",
+  "changelog": null,
+  "triggers": [],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 100,
+          "y": 200
+        },
+        "config": {
+          "inputVariables": [
+            {
+              "name": "sql",
+              "type": "string",
+              "required": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "tool-1",
+        "nodeType": "tool",
+        "name": "TableSqlRunner",
+        "position": {
+          "x": 400,
+          "y": 200
+        },
+        "config": {
+          "toolId": "019efb24-c980-7c37-85c6-6f1d60ee632c",
+          "toolName": "cust_m_tool_7qm5",
+          "params": {
+            "sql": "{{trigger.payload.sql}}"
+          }
+        }
+      },
+      {
+        "id": "end",
+        "nodeType": "end",
+        "name": "End",
+        "position": {
+          "x": 700,
+          "y": 200
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "source": "start",
+        "sourceHandle": "on_success",
+        "target": "tool-1"
+      },
+      {
+        "id": "e2",
+        "source": "tool-1",
+        "sourceHandle": "on_success",
+        "target": "end"
+      }
+    ],
+    "steps": [],
+    "inputSchema": null,
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}
