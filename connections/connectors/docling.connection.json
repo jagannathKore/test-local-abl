@@ -1,0 +1,13 @@
+{
+  "connectorName": "docling",
+  "displayName": "Docling",
+  "metadata": {
+    "authType": "none",
+    "synthetic": true
+  },
+  "scope": "tenant",
+  "status": "active",
+  "usageHardCap": null,
+  "usageSoftCap": null,
+  "userId": null
+}

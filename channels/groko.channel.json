@@ -1,0 +1,30 @@
+{
+  "environment": null,
+  "channelType": "voice_realtime",
+  "externalIdentifier": "groko",
+  "displayName": "groko",
+  "config": {
+    "identityVerification": {
+      "providerVerificationStrength": "weak"
+    },
+    "inboundCall": true,
+    "outboundCall": true,
+    "semanticConvergenceMode": "enforce",
+    "s2sProvider": "s2s:grok",
+    "asrVendor": "custom:EmotechASR",
+    "asrLanguage": "ar",
+    "asrAlternativeLanguages": [],
+    "ttsVendor": "custom:Emotech",
+    "ttsLanguage": "ar-SA",
+    "ttsVoice": "ar-SA_Male_3_Premium_beta",
+    "s2sModel": "grok-2-1212",
+    "s2sVoice": "ara",
+    "s2sTemperature": 0.8,
+    "s2sTurnDetection": "server_vad",
+    "s2sThreshold": 0.5,
+    "s2sSilenceDuration": 500,
+    "s2sPrefixPadding": 300
+  },
+  "status": "inactive",
+  "_exportedId": "019eb70c-6476-77ee-912c-c1536db61309"
+}

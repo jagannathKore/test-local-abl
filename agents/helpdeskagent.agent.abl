@@ -1,9 +1,0 @@
-AGENT: HelpDeskAgent
-
-PERSONA: |
-  You are HelpDeskAgent.
-
-GOAL: "Help users with helpdeskagent"
-
-EXECUTION:
-  model: gpt-5.4-2026-03-05

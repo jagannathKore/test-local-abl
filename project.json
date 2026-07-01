@@ -1,12 +1,12 @@
 {
   "format_version": "2.0",
-  "name": "TestPush",
-  "slug": "testpush",
-  "description": null,
+  "name": "FeatureTest",
+  "slug": "featuretest",
+  "description": "Test my Feature",
   "abl_version": "1.0",
-  "exported_at": "2026-06-26T12:43:11.122Z",
-  "exported_by": "user-dev-001",
-  "entry_agent": null,
+  "exported_at": "2026-07-01T07:52:03.516Z",
+  "exported_by": "019d2a2c-e075-7523-bcbf-64f1c7115da7",
+  "entry_agent": "Encyclopedia",
   "dsl_format": "legacy",
   "layers_included": [
     "core",
@@ -21,15 +21,22 @@
     "tables"
   ],
   "agents": {
-    "WikiAgent": {
-      "path": "agents/wikiagent.agent.abl",
+    "DeleteAgent": {
+      "path": "agents/deleteagent.agent.abl",
       "owner": null,
       "ownerTeam": null,
-      "description": "Helpful assistant that answers user question.",
+      "description": null,
       "version": null
     },
-    "HelpDeskAgent": {
-      "path": "agents/helpdeskagent.agent.abl",
+    "DocAgent": {
+      "path": "agents/docagent.agent.abl",
+      "owner": null,
+      "ownerTeam": null,
+      "description": null,
+      "version": null
+    },
+    "Encyclopedia": {
+      "path": "agents/encyclopedia.agent.abl",
       "owner": null,
       "ownerTeam": null,
       "description": null,
@@ -37,6 +44,30 @@
     }
   },
   "tools": {
+    "converter": {
+      "path": "tools/converter.tools.abl",
+      "owner": null
+    },
+    "adder1": {
+      "path": "tools/adder1.tools.abl",
+      "owner": null
+    },
+    "apikeytest": {
+      "path": "tools/apikeytest.tools.abl",
+      "owner": null
+    },
+    "search_kb_test": {
+      "path": "tools/search_kb_test.tools.abl",
+      "owner": null
+    },
+    "customscript": {
+      "path": "tools/customscript.tools.abl",
+      "owner": null
+    },
+    "search_kb_kb": {
+      "path": "tools/search_kb_kb.tools.abl",
+      "owner": null
+    },
     "delete_person": {
       "path": "tools/delete_person.tools.abl",
       "owner": null
@@ -45,23 +76,45 @@
   "behavior_profiles": {},
   "metadata": {
     "entity_counts": {
-      "agents": 2,
-      "tools": 1,
+      "agents": 3,
+      "tools": 7,
       "behavior_profiles": 0,
-      "core": 4,
-      "connections": 0,
+      "core": 11,
+      "connections": 1,
       "prompts": 0,
       "guardrails": 0,
-      "workflows": 1,
+      "workflows": 7,
       "evals": 0,
-      "search": 0,
-      "channels": 0,
+      "search": 4,
+      "channels": 3,
       "vocabulary": 0,
       "tables": 0
     },
     "required_env_vars": [],
-    "required_config_vars": [],
+    "required_config_vars": [
+      "URL"
+    ],
     "required_connectors": [],
-    "required_mcp_servers": []
+    "required_mcp_servers": [],
+    "required_auth_profiles": [
+      {
+        "name": "APIKeyTest",
+        "authType": "unknown",
+        "scope": "project",
+        "config": {},
+        "referencedBy": [
+          "tool:apikeytest"
+        ]
+      },
+      {
+        "name": "cd",
+        "authType": "unknown",
+        "scope": "project",
+        "config": {},
+        "referencedBy": [
+          "tool:customscript"
+        ]
+      }
+    ]
   }
 }

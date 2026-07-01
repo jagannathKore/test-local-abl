@@ -1,0 +1,13 @@
+{
+  "name": "TFL",
+  "type": "cx_automation",
+  "description": null,
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "tags": [],
+  "slug": "tfl",
+  "_exportedId": "019dd3ac-796c-7429-bfa8-25502df09164"
+}

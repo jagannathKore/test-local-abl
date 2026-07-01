@@ -1,0 +1,89 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "bf47fef17ad124461cfac73981fba47e5ca151538e6edfb140ac3098a13e6f2a",
+  "changelog": null,
+  "triggers": [
+    {
+      "_exportedId": "9e395637-de7d-4d59-ad31-0eafa487c601",
+      "triggerName": "webhook",
+      "type": "webhook",
+      "config": {},
+      "environment": null
+    }
+  ],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": []
+        }
+      },
+      {
+        "id": "6e204f34-c072-47f0-a728-600a4bb9b9ef",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 900,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "f91b5c46-b34b-47e9-a565-3b75f3da25c1",
+        "nodeType": "agent",
+        "name": "Agent0001",
+        "position": {
+          "x": 650,
+          "y": 50
+        },
+        "config": {
+          "agentId": "019e749f-da3d-768b-b82e-233d322afebd",
+          "input": "Extract the content",
+          "attachments": "https://www.rbi.org.in/upload/publications/pdfs/59260.pdf"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-node-f91b5c46-b34b-47e9-a565-3b75f3da25c1",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "f91b5c46-b34b-47e9-a565-3b75f3da25c1"
+      },
+      {
+        "id": "xy-edge__f91b5c46-b34b-47e9-a565-3b75f3da25c1on_success-6e204f34-c072-47f0-a728-600a4bb9b9ef",
+        "source": "f91b5c46-b34b-47e9-a565-3b75f3da25c1",
+        "sourceHandle": "on_success",
+        "target": "6e204f34-c072-47f0-a728-600a4bb9b9ef"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "fileUrl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "fileUrl"
+      ]
+    },
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

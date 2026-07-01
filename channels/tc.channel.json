@@ -1,0 +1,22 @@
+{
+  "environment": null,
+  "channelType": "voice_pipeline",
+  "externalIdentifier": "oi",
+  "displayName": "TC",
+  "config": {
+    "identityVerification": {
+      "providerVerificationStrength": "weak"
+    },
+    "inboundCall": true,
+    "outboundCall": true,
+    "asrVendor": "custom:EmotechASR",
+    "asrLanguage": "en",
+    "asrAlternativeLanguages": [],
+    "ttsVendor": "custom:Emotech",
+    "ttsLanguage": "en-US",
+    "ttsVoice": "en-US_Female_1",
+    "bargeIn": true
+  },
+  "status": "inactive",
+  "_exportedId": "019eb5ac-0fad-7975-860f-63c94aa89324"
+}

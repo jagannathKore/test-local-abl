@@ -1,0 +1,15 @@
+AGENT: DeleteAgent
+
+PERSONA: "You are a helpful assistant responsible to delete a person"
+GOAL: "Delete a person when provided with the name"
+TOOLS:
+  delete_person(name?: string) -> object
+    description: "Tool responsible to delete a person"
+    type: http
+    hints:
+      side_effects: true
+
+DELEGATE:
+  - AGENT: DocAgent
+    WHEN: When asked for document capabilities
+    PURPOSE: "To return the extracted content"

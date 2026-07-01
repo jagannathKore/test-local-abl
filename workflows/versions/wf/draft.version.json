@@ -1,0 +1,95 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "0f661e07d70a8b665859fac58e4b896d03bacbc26214ef3cf337003af26c6a30",
+  "changelog": null,
+  "triggers": [],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 296.6666666666667,
+          "y": 29.166666666666664
+        },
+        "config": {
+          "inputVariables": []
+        }
+      },
+      {
+        "id": "2588f5b9-c448-4f4d-ba6e-cb5abc310364",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 812.2666666666667,
+          "y": -77.86666666666665
+        },
+        "config": {}
+      },
+      {
+        "id": "d58c7c7c-4119-477c-b75c-eeac6d6fd155",
+        "nodeType": "human",
+        "name": "Approval0001",
+        "position": {
+          "x": 461.4333333333332,
+          "y": -14.533333333333303
+        },
+        "config": {}
+      },
+      {
+        "id": "86f53bd2-025e-407d-bfcc-9c3114936f40",
+        "nodeType": "end",
+        "name": "End0002",
+        "position": {
+          "x": 814.7666666666667,
+          "y": 126.30000000000003
+        },
+        "config": {}
+      },
+      {
+        "id": "76e8609d-fb35-4ef7-8251-2b7fd2dff835",
+        "nodeType": "agent",
+        "name": "Agent0001",
+        "position": {
+          "x": 1054.7666666666667,
+          "y": 126.30000000000003
+        },
+        "config": {
+          "agentId": "019e6911-1494-77ab-bdbc-8186a0a4f135"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "xy-edge__start-nodeon_success-d58c7c7c-4119-477c-b75c-eeac6d6fd155",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "d58c7c7c-4119-477c-b75c-eeac6d6fd155"
+      },
+      {
+        "id": "xy-edge__d58c7c7c-4119-477c-b75c-eeac6d6fd155on_approve-2588f5b9-c448-4f4d-ba6e-cb5abc310364",
+        "source": "d58c7c7c-4119-477c-b75c-eeac6d6fd155",
+        "sourceHandle": "on_approve",
+        "target": "2588f5b9-c448-4f4d-ba6e-cb5abc310364"
+      },
+      {
+        "id": "xy-edge__d58c7c7c-4119-477c-b75c-eeac6d6fd155on_reject-86f53bd2-025e-407d-bfcc-9c3114936f40",
+        "source": "d58c7c7c-4119-477c-b75c-eeac6d6fd155",
+        "sourceHandle": "on_reject",
+        "target": "86f53bd2-025e-407d-bfcc-9c3114936f40"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": null,
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

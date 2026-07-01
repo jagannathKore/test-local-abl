@@ -1,61 +1,153 @@
 {
   "lockfile_version": "2.0",
-  "generated_at": "2026-06-26T12:43:11.126Z",
+  "generated_at": "2026-07-01T07:52:03.518Z",
   "agents": {
-    "WikiAgent": {
+    "DeleteAgent": {
       "version": "1.0",
-      "source_hash": "f528f73bfa339e99",
+      "source_hash": "3bc4a4845fa63268",
       "status": "active"
     },
-    "HelpDeskAgent": {
+    "DocAgent": {
       "version": "1.0",
-      "source_hash": "51bef05e5bb4dbcd",
+      "source_hash": "13d7d8d361bb5a35",
+      "status": "active"
+    },
+    "Encyclopedia": {
+      "version": "1.0",
+      "source_hash": "2cd674bce460f70f",
       "status": "active"
     }
   },
   "tools": {
+    "tools/converter.tools.abl": {
+      "source_hash": "d516f9725c7c9391"
+    },
+    "tools/adder1.tools.abl": {
+      "source_hash": "692ddf1992e0646b"
+    },
+    "tools/apikeytest.tools.abl": {
+      "source_hash": "4897871afbfebf90"
+    },
+    "tools/search_kb_test.tools.abl": {
+      "source_hash": "dbbc5d2623ea78f8"
+    },
+    "tools/customscript.tools.abl": {
+      "source_hash": "f98b06535c14a51a"
+    },
+    "tools/search_kb_kb.tools.abl": {
+      "source_hash": "d2318737d9ab242a"
+    },
     "tools/delete_person.tools.abl": {
-      "source_hash": "2b1d7aafd68e4b55"
+      "source_hash": "51b93d0c8a078668"
     }
   },
   "configs": {
     "config/runtime-config.json": {
-      "source_hash": "94ace7d9fdc41674"
+      "source_hash": "eb7559d1b9451b75"
     },
-    "config/llm-config.json": {
-      "source_hash": "8c6966cb1b299a23"
+    "config/project-model-configs/codex_api_test_haiku_iam_20260626063246.model-config.json": {
+      "source_hash": "2d532603725bafc3"
     },
-    "config/project-model-configs/gpt-5_4__2026-03-05_.model-config.json": {
-      "source_hash": "e99d995740715528"
+    "environment/config-vars.json": {
+      "source_hash": "aa0b5a2ca507bf2a"
     }
   },
-  "connections": {},
+  "connections": {
+    "connections/connectors/docling.connection.json": {
+      "source_hash": "d2bd0bc254be75f6"
+    }
+  },
   "guardrails": {},
   "workflows": {
-    "workflows/testwff.workflow.json": {
-      "source_hash": "67263850128eb7ba"
+    "workflows/adder.workflow.json": {
+      "source_hash": "67f1439202a30ca0"
     },
-    "workflows/versions/testwff/draft.version.json": {
-      "source_hash": "e6fbe62b839b673e",
+    "workflows/tfl.workflow.json": {
+      "source_hash": "7d3d49eb851f1650"
+    },
+    "workflows/wf.workflow.json": {
+      "source_hash": "22fca352b671696c"
+    },
+    "workflows/approval.workflow.json": {
+      "source_hash": "9f9663cae57cda9e"
+    },
+    "workflows/delete.workflow.json": {
+      "source_hash": "25946d06a586f80e"
+    },
+    "workflows/attachment.workflow.json": {
+      "source_hash": "1dc6f10b60338afc"
+    },
+    "workflows/wff.workflow.json": {
+      "source_hash": "7d6d7f046029fa89"
+    },
+    "workflows/versions/adder/draft.version.json": {
+      "source_hash": "dc217fa22375297b",
+      "version": "draft"
+    },
+    "workflows/versions/tfl/draft.version.json": {
+      "source_hash": "19071d4b519d6778",
+      "version": "draft"
+    },
+    "workflows/versions/wf/draft.version.json": {
+      "source_hash": "32fc6d247547aea1",
+      "version": "draft"
+    },
+    "workflows/versions/approval/draft.version.json": {
+      "source_hash": "5de715441f17f34b",
+      "version": "draft"
+    },
+    "workflows/versions/delete/draft.version.json": {
+      "source_hash": "1f7785cc6c3e3636",
+      "version": "draft"
+    },
+    "workflows/versions/attachment/draft.version.json": {
+      "source_hash": "4cfdb6c208a8d519",
+      "version": "draft"
+    },
+    "workflows/versions/wff/draft.version.json": {
+      "source_hash": "e21465944fc46c9d",
       "version": "draft"
     }
   },
   "evals": {},
-  "search": {},
-  "channels": {},
+  "search": {
+    "search/indexes/test.index.json": {
+      "source_hash": "f21d6b4f3cb28137"
+    },
+    "search/indexes/kb.index.json": {
+      "source_hash": "d5795bef3306f12b"
+    },
+    "search/knowledge-bases/test.kb.json": {
+      "source_hash": "8c2b6c57f0ec9174"
+    },
+    "search/knowledge-bases/kb.kb.json": {
+      "source_hash": "50d42937f2e7d448"
+    }
+  },
+  "channels": {
+    "channels/oi.channel.json": {
+      "source_hash": "258aa0613beb87d7"
+    },
+    "channels/tc.channel.json": {
+      "source_hash": "07394577f3dc5fda"
+    },
+    "channels/groko.channel.json": {
+      "source_hash": "e62ef6f3c9028f82"
+    }
+  },
   "vocabulary": {},
   "behavior_profiles": {},
   "layer_hashes": {
-    "core": "a602ad41f7c24adff45f5d01fb787980a819741a08d599559ef7ac1bb1bf781c",
-    "connections": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "core": "cfbfdb5de7cbd2992a887c4f81008e4ac4fd4117a000fb7a0c2468c9b7e5f55a",
+    "connections": "47efed6d01fbc80c073ecdb47fcf8a616a0fe656fcabd1204e22de9247767a27",
     "prompts": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "guardrails": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "workflows": "a1abaa3a78c13cb9ee5183331f68089aba3b65e110fdd69f3d09bd06f0c33c1e",
+    "workflows": "becd97305313dfac7478e84c924b337339943ac8a18d0a5b49b6a59e7eb92ee6",
     "evals": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "search": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "channels": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search": "cf9ed850b1652cb4cee3b5ee79b3f4487c9bc189c5ae34edc0ee7795ee8554b8",
+    "channels": "fdedfdf4729705a22328b02a695cbbfe50f1454187e2ecb9dc7b6e8206d981e4",
     "vocabulary": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "tables": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
   },
-  "integrity": "6d56951fb2e5c1e2bc8827eb05efda6d5f6e3726b66e59190a015d2b95af388e"
+  "integrity": "f1709612e3ed8fbb1f6537503b9fc0e2ef46780e2e738b6bf45a402e096863fe"
 }

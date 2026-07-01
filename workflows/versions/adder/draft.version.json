@@ -1,0 +1,116 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "cd3f27ce69fd58fd022d83cde78fe412852e54aa6c8eaef14816cae9df5cfe5e",
+  "changelog": null,
+  "triggers": [
+    {
+      "_exportedId": "5668b8bf-0128-441a-bac0-f00ca051ff63",
+      "triggerName": "webhook",
+      "type": "webhook",
+      "config": {},
+      "environment": null
+    }
+  ],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": [
+            {
+              "name": "num1",
+              "type": "number",
+              "required": true
+            },
+            {
+              "name": "num2",
+              "type": "number",
+              "required": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "e155657b-84ad-44a3-ba62-1ec9dd22b056",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 880,
+          "y": 50
+        },
+        "config": {
+          "outputMapping": {
+            "Output": {
+              "expression": "{{context.output}}",
+              "type": "string"
+            }
+          }
+        }
+      },
+      {
+        "id": "f6f00fda-80d5-479a-a60f-cbb8908250b3",
+        "nodeType": "function",
+        "name": "Function0001",
+        "position": {
+          "x": 628.3333333333334,
+          "y": 57.5
+        },
+        "config": {
+          "code": "context.output=context.steps.start.input.num1+context.steps.start.input.num2"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "xy-edge__start-nodeon_success-f6f00fda-80d5-479a-a60f-cbb8908250b3",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "f6f00fda-80d5-479a-a60f-cbb8908250b3"
+      },
+      {
+        "id": "xy-edge__f6f00fda-80d5-479a-a60f-cbb8908250b3on_success-e155657b-84ad-44a3-ba62-1ec9dd22b056",
+        "source": "f6f00fda-80d5-479a-a60f-cbb8908250b3",
+        "sourceHandle": "on_success",
+        "target": "e155657b-84ad-44a3-ba62-1ec9dd22b056"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "num1": {
+          "type": "number"
+        },
+        "num2": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "num1",
+        "num2"
+      ]
+    },
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "Output": {
+          "type": "string"
+        }
+      }
+    },
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

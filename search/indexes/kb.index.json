@@ -1,0 +1,23 @@
+{
+  "slug": "kb",
+  "name": "KB Index",
+  "description": null,
+  "embeddingModel": "bge-m3",
+  "embeddingDimensions": 1024,
+  "tokenChunkStrategy": null,
+  "vectorStore": {
+    "provider": "opensearch",
+    "collectionName": "search-vectors-v1"
+  },
+  "searchDefaults": {
+    "topK": 10,
+    "similarityThreshold": 0.2,
+    "includeMetadata": true,
+    "includeContent": true
+  },
+  "llmConfig": {
+    "enabled": true
+  },
+  "status": "active",
+  "_exportedId": "019e5504-451b-7ba2-889e-ccdfdb8d20c7"
+}

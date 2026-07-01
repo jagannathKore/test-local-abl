@@ -1,0 +1,26 @@
+{
+  "environment": null,
+  "channelType": "voice_realtime",
+  "externalIdentifier": "oi",
+  "displayName": "oi",
+  "config": {
+    "identityVerification": {
+      "providerVerificationStrength": "weak"
+    },
+    "inboundCall": true,
+    "outboundCall": true,
+    "semanticConvergenceMode": "shadow",
+    "asrVendor": "aws",
+    "asrAlternativeLanguages": [],
+    "ttsVendor": "aws",
+    "s2sProvider": "s2s:openai",
+    "s2sModel": "gpt-realtime-2",
+    "s2sVoice": "marin",
+    "s2sTurnDetection": "server_vad",
+    "s2sThreshold": 0,
+    "s2sSilenceDuration": 700,
+    "s2sPrefixPadding": 300
+  },
+  "status": "inactive",
+  "_exportedId": "019e9702-4327-7d69-b44e-ab07349a4d78"
+}

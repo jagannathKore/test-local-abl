@@ -1,0 +1,91 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "b9935d61dfdf1aefe72beddfef2854dad917a014c87b7112e67f1c697b01eac0",
+  "changelog": null,
+  "triggers": [],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": [
+            {
+              "name": "name",
+              "type": "string",
+              "required": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "8707481e-e605-48dc-9649-ac6a9acba525",
+        "nodeType": "tool",
+        "name": "Tool0001",
+        "position": {
+          "x": 640,
+          "y": 50
+        },
+        "config": {
+          "toolId": "019e6910-50de-7339-b0b1-d85600fd2c3e",
+          "toolName": "delete_person",
+          "toolType": null,
+          "params": {
+            "name": "{{context.steps.start.input.name}}"
+          },
+          "executionMode": "sync"
+        }
+      },
+      {
+        "id": "855e3022-bd72-480f-b171-6362b6e6d66d",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 880,
+          "y": 50
+        },
+        "config": {}
+      }
+    ],
+    "edges": [
+      {
+        "id": "xy-edge__start-nodeon_success-8707481e-e605-48dc-9649-ac6a9acba525",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "8707481e-e605-48dc-9649-ac6a9acba525"
+      },
+      {
+        "id": "xy-edge__8707481e-e605-48dc-9649-ac6a9acba525on_success-855e3022-bd72-480f-b171-6362b6e6d66d",
+        "source": "8707481e-e605-48dc-9649-ac6a9acba525",
+        "sourceHandle": "on_success",
+        "target": "855e3022-bd72-480f-b171-6362b6e6d66d"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

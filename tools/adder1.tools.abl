@@ -1,0 +1,12 @@
+TOOLS:
+  adder1(num1: number, num2: number) -> object
+    description: "Tool responsible to do sum of 2 numbers"
+    type: workflow
+    params:
+      num1:
+        description: "Workflow input 'num1'"
+      num2:
+        description: "Workflow input 'num2'"
+    workflow_id: 019dd2ef-27c0-7c95-9aa4-73acac0b53d9
+    workflow_version: draft
+    trigger_id: 5668b8bf-0128-441a-bac0-f00ca051ff63

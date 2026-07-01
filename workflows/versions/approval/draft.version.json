@@ -1,0 +1,87 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "b756538735b2f6f91fc8a3d9bbf638386f8813d6f5d452c33f5e3ee8e9383e18",
+  "changelog": null,
+  "triggers": [],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": []
+        }
+      },
+      {
+        "id": "5a95d003-4e43-4f85-b01c-9b667f900b21",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 890,
+          "y": 50
+        },
+        "config": {
+          "outputMapping": {
+            "": {
+              "expression": "{{",
+              "type": "json",
+              "description": ""
+            }
+          }
+        }
+      },
+      {
+        "id": "2ec1835c-56f9-4d58-98d7-6e9fb91fc447",
+        "nodeType": "integration",
+        "name": "Integration0001",
+        "position": {
+          "x": 602.4999999999999,
+          "y": 75
+        },
+        "config": {
+          "connectorId": "docling",
+          "actionName": "extract_document",
+          "connectionId": "system-docling-none",
+          "params": {
+            "extractImages": "false",
+            "extractTables": "false",
+            "ocrEnabled": "false",
+            "timeout": "60",
+            "fileUrl": "https://www.rbi.org.in/upload/publications/pdfs/59260.pdf"
+          },
+          "paramModes": {}
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "xy-edge__start-nodeon_success-2ec1835c-56f9-4d58-98d7-6e9fb91fc447",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "2ec1835c-56f9-4d58-98d7-6e9fb91fc447"
+      },
+      {
+        "id": "xy-edge__2ec1835c-56f9-4d58-98d7-6e9fb91fc447on_success-5a95d003-4e43-4f85-b01c-9b667f900b21",
+        "source": "2ec1835c-56f9-4d58-98d7-6e9fb91fc447",
+        "sourceHandle": "on_success",
+        "target": "5a95d003-4e43-4f85-b01c-9b667f900b21"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": null,
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

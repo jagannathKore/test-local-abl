@@ -1,0 +1,5 @@
+TOOLS:
+  search_kb_test(query: string, queryType?: string, filters?: object[], aggregation?: {field: string, function?: string}, rerank?: boolean, skipPreprocessing?: boolean, skipVocabularyResolution?: boolean) -> {results: object[], totalCount: number, queryType: string, aggregations?: object[]}
+    description: "Search the \"test\" knowledge base"
+    type: searchai
+    index_id: "019e16e3-505c-7422-97db-5d80f9ec4965"

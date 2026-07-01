@@ -1,4 +1,7 @@
 {
+  "conversion": {
+    "currency_mode": "static"
+  },
   "extraction": {
     "strategy": "auto",
     "correction_detection": "ml",
@@ -12,6 +15,13 @@
     "confidence_threshold": 0.5,
     "include_confidence": true
   },
+  "inference": {
+    "confidence": 0.8,
+    "confirm": true,
+    "model_tier": "fast",
+    "max_fields_per_pass": 3
+  },
+  "lookup_tables": [],
   "multi_intent": {
     "enabled": true,
     "strategy": "primary_queue",
@@ -20,18 +30,10 @@
     "confidence_threshold": 0.6,
     "queue_max_age_ms": 600000
   },
-  "inference": {
-    "confidence": 0.8,
-    "confirm": true,
-    "model_tier": "fast",
-    "max_fields_per_pass": 3
-  },
-  "conversion": {
-    "currency_mode": "static"
-  },
+  "operationTierOverrides": {},
   "pii_redaction": {
-    "enabled": true,
-    "redact_input": true,
+    "enabled": false,
+    "redact_input": false,
     "redact_output": false,
     "tier": "basic",
     "latency_budget_ms": 200,
@@ -41,11 +43,14 @@
     ],
     "secret_scrub_exempt_fields": []
   },
-  "lookup_tables": [],
   "tool_call_policy": {
     "max_boundary_call_depth": 3,
     "max_boundary_calls_per_turn": 8,
     "boundary_call_enabled": true
+  },
+  "analytics": {
+    "dimensions": [],
+    "outputItems": []
   },
   "filler": {
     "enabled": true,
@@ -62,13 +67,5 @@
     "piggybackEnabled": true,
     "pipelineGenerationEnabled": true,
     "modelSource": "system"
-  },
-  "analytics": {
-    "dimensions": [],
-    "outputItems": []
-  },
-  "orchestrationContract": {
-    "mode": "v2",
-    "origin": "new_empty"
   }
 }

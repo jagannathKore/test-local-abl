@@ -1,0 +1,13 @@
+{
+  "name": "Attachment",
+  "type": "cx_automation",
+  "description": null,
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "tags": [],
+  "slug": "attachment",
+  "_exportedId": "019e74a0-9e32-7a6e-9ab3-bb0adae341b8"
+}

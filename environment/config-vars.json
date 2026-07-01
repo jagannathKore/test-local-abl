@@ -1,0 +1,20 @@
+[
+  {
+    "key": "CITY",
+    "value": "Hyderabad",
+    "isSecret": false,
+    "description": "It is the name of the city"
+  },
+  {
+    "key": "URL",
+    "value": "api.openweathermap.org/geo/1.0/direct",
+    "isSecret": false,
+    "description": null
+  },
+  {
+    "key": "WEATHERTEST",
+    "value": "WeatherTest",
+    "isSecret": false,
+    "description": null
+  }
+]

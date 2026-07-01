@@ -1,0 +1,23 @@
+{
+  "slug": "test",
+  "name": "test Index",
+  "description": "test",
+  "embeddingModel": "bge-m3",
+  "embeddingDimensions": 1024,
+  "tokenChunkStrategy": null,
+  "vectorStore": {
+    "provider": "opensearch",
+    "collectionName": "search-vectors-v1"
+  },
+  "searchDefaults": {
+    "topK": 10,
+    "similarityThreshold": 0.2,
+    "includeMetadata": true,
+    "includeContent": true
+  },
+  "llmConfig": {
+    "enabled": true
+  },
+  "status": "active",
+  "_exportedId": "019e16e3-505c-7422-97db-5d80f9ec4965"
+}

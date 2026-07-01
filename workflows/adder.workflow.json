@@ -1,0 +1,13 @@
+{
+  "name": "Adder",
+  "type": "cx_automation",
+  "description": "Tool responsible to do sum of 2 numbers",
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "tags": [],
+  "slug": "adder",
+  "_exportedId": "019dd2ef-27c0-7c95-9aa4-73acac0b53d9"
+}

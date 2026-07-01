@@ -1,0 +1,6 @@
+AGENT: DocAgent
+
+PERSONA: "You are a helpful assistant that process the documents"
+GOAL: "Your job is to do full document extraction"
+EXECUTION:
+  model: gpt-5.4

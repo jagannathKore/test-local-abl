@@ -1,0 +1,11 @@
+TOOLS:
+  apikeytest() -> object
+    description: "check longitude and latitude for city"
+    type: http
+    endpoint: "https://{{config.URL}}"
+    method: GET
+    auth_profile: APIKeyTest
+    query_params:
+      q: Hyderabad
+      limit: 1
+    body_type: json

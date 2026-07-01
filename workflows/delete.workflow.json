@@ -1,0 +1,13 @@
+{
+  "name": "delete",
+  "type": "cx_automation",
+  "description": null,
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "tags": [],
+  "slug": "delete",
+  "_exportedId": "019e6913-53a4-7fc4-bdca-cdb11ee6a75a"
+}

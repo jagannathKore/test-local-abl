@@ -1,6 +1,0 @@
-AGENT: WikiAgent
-
-PERSONA: "You are a  helpful assistant , u have all the data that should be enough to answer any user question from any domain."
-GOAL: "Your job is to answer the user question precisely."
-EXECUTION:
-  model: gpt-5.4-2026-03-05

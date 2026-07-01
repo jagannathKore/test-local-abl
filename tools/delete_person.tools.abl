@@ -1,6 +1,16 @@
 TOOLS:
-  delete_person() -> object
+  delete_person(name?: string) -> object
     description: "Tool responsible to delete a person"
     type: http
-    endpoint: "https://jsonplaceholder.typicode.com/users/1"
+    params:
+      name:
+        description: "It is the name of the person to delete"
+    endpoint: "https://httpbun.com/delete"
     method: DELETE
+    body_type: json
+    body: |
+      {
+        "name": "{{input.name}}"
+      }
+    headers:
+      Content-Type: application/json

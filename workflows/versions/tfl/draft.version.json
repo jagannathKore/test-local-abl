@@ -1,0 +1,131 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "704c85a6cd0c43fe51447602d235e220ead981b62bf4c45948592ae648dc4137",
+  "changelog": null,
+  "triggers": [],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": []
+        }
+      },
+      {
+        "id": "fbf999d3-74ad-44ad-bf7b-8dd9d8269420",
+        "nodeType": "tool",
+        "name": "Tool0001",
+        "position": {
+          "x": 640,
+          "y": 50
+        },
+        "config": {
+          "toolId": "019dd43d-9eea-767d-b781-e2d3db96ac3b",
+          "toolName": "apikeytest",
+          "params": {}
+        }
+      },
+      {
+        "id": "ba99749f-26aa-4961-b779-4fdd3f122bff",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 880,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "321cec20-770e-40c9-a938-82b8d3072a95",
+        "nodeType": "tool",
+        "name": "Tool0002",
+        "position": {
+          "x": 1120,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "6022c6f6-bbe6-44f8-8b86-b7f749ada8c0",
+        "nodeType": "tool",
+        "name": "Tool0003",
+        "position": {
+          "x": 1360,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "5217a2e1-63bc-42d4-9e7c-fd19f6addad2",
+        "nodeType": "tool",
+        "name": "Tool0004",
+        "position": {
+          "x": 1600,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "6aebb0f4-c6b3-4742-8014-7e553da9474e",
+        "nodeType": "tool",
+        "name": "Tool0005",
+        "position": {
+          "x": 1840,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "6697c463-f87b-4ada-8a88-7c332f83c4f1",
+        "nodeType": "tool",
+        "name": "Tool0006",
+        "position": {
+          "x": 2080,
+          "y": 50
+        },
+        "config": {}
+      },
+      {
+        "id": "33590ab0-2fd6-443b-ad32-6ed5c89f626b",
+        "nodeType": "agent",
+        "name": "Agent0001",
+        "position": {
+          "x": 2320,
+          "y": 50
+        },
+        "config": {}
+      }
+    ],
+    "edges": [
+      {
+        "id": "xy-edge__start-nodeon_success-fbf999d3-74ad-44ad-bf7b-8dd9d8269420",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "fbf999d3-74ad-44ad-bf7b-8dd9d8269420"
+      },
+      {
+        "id": "xy-edge__fbf999d3-74ad-44ad-bf7b-8dd9d8269420on_success-ba99749f-26aa-4961-b779-4fdd3f122bff",
+        "source": "fbf999d3-74ad-44ad-bf7b-8dd9d8269420",
+        "sourceHandle": "on_success",
+        "target": "ba99749f-26aa-4961-b779-4fdd3f122bff"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": null,
+    "outputSchema": null,
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}

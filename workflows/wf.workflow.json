@@ -1,0 +1,13 @@
+{
+  "name": "wf",
+  "type": "cx_automation",
+  "description": null,
+  "entryAgent": null,
+  "metadata": null,
+  "slaMinutes": null,
+  "escalationRules": [],
+  "notificationRules": [],
+  "tags": [],
+  "slug": "wf",
+  "_exportedId": "019e4700-c49b-7ca0-985b-86c5616e3b76"
+}

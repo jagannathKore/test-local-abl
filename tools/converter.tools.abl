@@ -1,0 +1,24 @@
+TOOLS:
+  converter(num?: number) -> object
+    description: "Tool responsible to do addition"
+    type: http
+    params:
+      num:
+        description: "It is the number to be converted."
+    endpoint: "https://www.dataaccess.com/webservicesserver/numberconversion.wso"
+    method: POST
+    protocol: soap
+    soap_version: 1.1
+    soap_action: "\"\""
+    body_type: xml
+    body: |
+      <?xml version="1.0" encoding="utf-8"?>
+      <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+        <soap:Body>
+          <NumberToWords xmlns="http://www.dataaccess.com/webservicesserver/">
+            <ubiNum>{{input.num}}</ubiNum>
+          </NumberToWords>
+        </soap:Body>
+      </soap:Envelope>
+    headers:
+      Content-Type: "text/xml; charset=utf-8"

@@ -1,0 +1,16 @@
+TOOLS:
+  customscript() -> object
+    description: "tool to upload files"
+    type: http
+    endpoint: "https://agent-platform.kore.ai/api/v1/serverless/Uploadto_S3"
+    method: POST
+    auth_profile: cd
+    auth: api_key
+    body_type: json
+    body: |
+      {
+        "function_name": "upload_file_to_s3",
+        "args": {
+          "file_url": "https://www.rbi.org.in/upload/publications/pdfs/59260.pdf"
+        }
+      }

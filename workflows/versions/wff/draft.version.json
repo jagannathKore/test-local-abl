@@ -1,0 +1,94 @@
+{
+  "version": "draft",
+  "state": "active",
+  "environment": null,
+  "source_hash": "9d32e029f11ff6f617be9894b4e0f53c43206af166db4804d027dae8e528d0af",
+  "changelog": null,
+  "triggers": [
+    {
+      "_exportedId": "a25c4364-c86a-4bd8-a581-06894c0468ed",
+      "triggerName": "webhook",
+      "type": "webhook",
+      "config": {},
+      "environment": null
+    }
+  ],
+  "published_at": null,
+  "definition": {
+    "nodes": [
+      {
+        "id": "start-node",
+        "nodeType": "start",
+        "name": "Start",
+        "position": {
+          "x": 400,
+          "y": 50
+        },
+        "config": {
+          "inputVariables": []
+        }
+      },
+      {
+        "id": "6bbdef31-1a20-44b6-a43a-1fee121e7cbd",
+        "nodeType": "end",
+        "name": "End0001",
+        "position": {
+          "x": 900,
+          "y": 50
+        },
+        "config": {
+          "outputMapping": {
+            "Outptut": {
+              "expression": "{{context.steps.Function0001.output.output}}",
+              "type": "string"
+            }
+          }
+        }
+      },
+      {
+        "id": "ae610395-9f72-42f2-9cea-6775fb3f4275",
+        "nodeType": "agent",
+        "name": "Agent0001",
+        "position": {
+          "x": 650,
+          "y": 50
+        },
+        "config": {
+          "agentId": "019e749f-da3d-768b-b82e-233d322afebd",
+          "input": "Extract the content as is ",
+          "attachments": "[\"https://demo.kore.ai/images/fileupload/atf-fileupload/upload/Birth_Certificate_Pass.png\"]",
+          "attachmentMode": "expression"
+        }
+      }
+    ],
+    "edges": [
+      {
+        "id": "e-start-node-ae610395-9f72-42f2-9cea-6775fb3f4275",
+        "source": "start-node",
+        "sourceHandle": "on_success",
+        "target": "ae610395-9f72-42f2-9cea-6775fb3f4275"
+      },
+      {
+        "id": "xy-edge__ae610395-9f72-42f2-9cea-6775fb3f4275on_success-6bbdef31-1a20-44b6-a43a-1fee121e7cbd",
+        "source": "ae610395-9f72-42f2-9cea-6775fb3f4275",
+        "sourceHandle": "on_success",
+        "target": "6bbdef31-1a20-44b6-a43a-1fee121e7cbd"
+      }
+    ],
+    "steps": [],
+    "envVars": {},
+    "inputSchema": null,
+    "outputSchema": {
+      "type": "object",
+      "properties": {
+        "Outptut": {
+          "type": "string"
+        }
+      }
+    },
+    "entryAgent": null,
+    "slaMinutes": null,
+    "escalationRules": [],
+    "notificationRules": []
+  }
+}
